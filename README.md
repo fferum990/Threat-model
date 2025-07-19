@@ -24,6 +24,8 @@ ThreatModelingApp/
 │   └── UpdateViewModel.cs
 ├── Converters/ - Конвертеры для привязок данных
 └── Controls/ - Кастомные элементы управления
+
+
 2.
 ThreatModelingApp.Core/
 ├── Services/
@@ -45,6 +47,9 @@ ThreatModelingApp.Core/
 └── Helpers/
     ├── DocumentBuilder.cs - Построитель Word-документов
     └── JsonHelper.cs - Помощник для работы с JSON
+
+
+
 3.
 ThreatModelingApp.Data/
 ├── Repositories/
@@ -54,6 +59,9 @@ ThreatModelingApp.Data/
 ├── DbContext/
 │   └── AppDbContext.cs - Контекст для работы с PostgreSQL
 └── Migrations/ - Миграции базы данных
+
+
+
 4.
 ThreatModelingApp.Infrastructure/
 ├── Networking/
@@ -63,6 +71,8 @@ ThreatModelingApp.Infrastructure/
 │   └── Logger.cs - Логгер приложения
 └── Configuration/
     └── AppConfig.cs - Конфигурация приложения
+
+
 1.	Questionnaire Module:
 o	Загрузка вопросов из JSON/БД
 o	Пошаговый опрос пользователя
