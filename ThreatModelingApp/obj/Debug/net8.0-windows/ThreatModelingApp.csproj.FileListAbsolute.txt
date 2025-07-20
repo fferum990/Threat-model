@@ -57,3 +57,6 @@ C:\Users\Admin\source\repos\ThreatModelingApp\ThreatModelingApp\bin\Debug\net8.0
 C:\Users\Admin\source\repos\ThreatModelingApp\ThreatModelingApp\bin\Debug\net8.0-windows\System.Security.Cryptography.Pkcs.dll
 C:\Users\Admin\source\repos\ThreatModelingApp\ThreatModelingApp\bin\Debug\net8.0-windows\System.Security.Cryptography.Xml.dll
 C:\Users\Admin\source\repos\ThreatModelingApp\ThreatModelingApp\bin\Debug\net8.0-windows\runtimes\win\lib\net8.0\System.Security.Cryptography.Pkcs.dll
+C:\Users\vfndt\Source\Repos\Threat-odel\ThreatModelingApp\obj\Debug\net8.0-windows\ThreatModelingApp.dll
+C:\Users\vfndt\Source\Repos\Threat-odel\ThreatModelingApp\obj\Debug\net8.0-windows\refint\ThreatModelingApp.dll
+C:\Users\vfndt\Source\Repos\Threat-odel\ThreatModelingApp\obj\Debug\net8.0-windows\ThreatModelingApp.pdb
