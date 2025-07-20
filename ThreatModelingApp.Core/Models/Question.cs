@@ -12,5 +12,9 @@ namespace ThreatModelingApp.Core.Models
         public QuestionSection Section { get; set; }
         public int Order { get; set; }
         public List<AnswerOption> PossibleAnswers { get; set; } = new List<AnswerOption>();
+	public List<string> Options { get; set; } = new();
+        public string Hint { get; set; }
+        public bool IsRequired { get; set; } = true;
+        public int? NextQuestionId { get; set; }
     }
 }

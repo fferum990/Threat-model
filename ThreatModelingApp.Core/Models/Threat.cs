@@ -13,5 +13,15 @@ namespace ThreatModelingApp.Core.Models
         public bool IsCustom { get; set; }
         public List<ThreatCondition> Conditions { get; set; } = new List<ThreatCondition>();
         public List<Recommendation> Recommendations { get; set; } = new List<Recommendation>();
+	public RiskLevel RiskLevel { get; set; }
+        public List<Mitigation> Mitigations { get; set; } = new();
+        public string Reference { get; set; }
+        public bool IsSelected { get; set; }
+    }
+
+    public class Mitigation
+    {
+        public string Description { get; set; }
+        public string Implementation { get; set; }
     }
 }

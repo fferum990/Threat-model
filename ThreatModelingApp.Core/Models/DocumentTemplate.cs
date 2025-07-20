@@ -7,5 +7,6 @@ namespace ThreatModelingApp.Core.Models
         public string Description { get; set; }
         public string FilePath { get; set; } // Путь к .dotx файлу
         public bool IsDefault { get; set; }
+	public List<string> Placeholders { get; set; } = new();
     }
 }

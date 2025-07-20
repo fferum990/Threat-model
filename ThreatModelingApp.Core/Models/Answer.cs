@@ -6,5 +6,6 @@ namespace ThreatModelingApp.Core.Models
         public int QuestionId { get; set; }
         public object Value { get; set; }
         public string Comment { get; set; }
+	public bool IsRelevant { get; set; } = true;
     }
 }
