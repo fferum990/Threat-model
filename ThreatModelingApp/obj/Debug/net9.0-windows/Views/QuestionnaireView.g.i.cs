@@ -52,7 +52,7 @@ namespace ThreatModelingApp.Views {
                 return;
             }
             _contentLoaded = true;
-            System.Uri resourceLocater = new System.Uri("/ThreatModelingApp;V1.0.0.0;component/views/questionnaireview.xaml", System.UriKind.Relative);
+            System.Uri resourceLocater = new System.Uri("/ThreatModelingApp;component/views/questionnaireview.xaml", System.UriKind.Relative);
             
             #line 1 "..\..\..\..\Views\QuestionnaireView.xaml"
             System.Windows.Application.LoadComponent(this, resourceLocater);

@@ -10,12 +10,13 @@ namespace ThreatModelingApp.ViewModels
 {
     public partial class QuestionnaireViewModel : ObservableObject
     {
+        private readonly Action<ObservableObject> _navigateTo;
         private int _currentIndex = 0;
         private readonly List<QuestionAnswer> _answers = new();
 
         private readonly List<string> _questions = new()
         {
-            "Это первый вопрос???",
+            "Это первый вопрос?",
             "Используется ли двухфакторная аутентификация?",
             "Проводится ли регулярное обновление системы?"
         };
@@ -26,8 +27,10 @@ namespace ThreatModelingApp.ViewModels
         public IRelayCommand AnswerYesCommand { get; }
         public IRelayCommand AnswerNoCommand { get; }
 
-        public QuestionnaireViewModel()
+        public QuestionnaireViewModel(Action<ObservableObject> navigateTo)
         {
+            _navigateTo = navigateTo;
+
             AnswerYesCommand = new RelayCommand(OnAnswerYes);
             AnswerNoCommand = new RelayCommand(OnAnswerNo);
 
@@ -61,13 +64,10 @@ namespace ThreatModelingApp.ViewModels
                     Answers = _answers
                 };
 
-                File.WriteAllText("result.json", JsonSerializer.Serialize(result));
+                var json = JsonSerializer.Serialize(result, new JsonSerializerOptions { WriteIndented = true });
+                File.WriteAllText("result.json", json);
 
-                if (App.Current.MainWindow.DataContext is MainViewModel main)
-                {
-                    //main.IsSurveyComplete = true;
-                    main.CurrentViewModel = new ThreatsListViewModel();
-                }
+                _navigateTo?.Invoke(new ThreatsListViewModel());
             }
         }
     }

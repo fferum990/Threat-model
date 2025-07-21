@@ -14,7 +14,7 @@ using System.Reflection;
 [assembly: System.Reflection.AssemblyCompanyAttribute("ThreatModelingApp.Core")]
 [assembly: System.Reflection.AssemblyConfigurationAttribute("Debug")]
 [assembly: System.Reflection.AssemblyFileVersionAttribute("1.0.0.0")]
-[assembly: System.Reflection.AssemblyInformationalVersionAttribute("1.0.0+3e812fc812a977ef75d9c7b158449a1f0836c0f4")]
+[assembly: System.Reflection.AssemblyInformationalVersionAttribute("1.0.0+7a4153dc7bf8f54517cd9dfa9c5e15ccc5fce402")]
 [assembly: System.Reflection.AssemblyProductAttribute("ThreatModelingApp.Core")]
 [assembly: System.Reflection.AssemblyTitleAttribute("ThreatModelingApp.Core")]
 [assembly: System.Reflection.AssemblyVersionAttribute("1.0.0.0")]

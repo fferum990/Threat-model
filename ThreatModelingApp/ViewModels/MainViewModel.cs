@@ -1,5 +1,7 @@
 ﻿using CommunityToolkit.Mvvm.ComponentModel;
 using CommunityToolkit.Mvvm.Input;
+using System;
+using ThreatModelingApp.Core.Models;
 
 namespace ThreatModelingApp.ViewModels
 {
@@ -8,6 +10,14 @@ namespace ThreatModelingApp.ViewModels
         [ObservableProperty]
         private object currentViewModel;
 
+        [ObservableProperty]
+        private bool isSurveyComplete;
+
+        public RelayCommand StartQuestionnaireCommand { get; }
+        public RelayCommand ShowThreatsCommand { get; }
+        public RelayCommand UpdateDatabaseCommand { get; }
+        public RelayCommand ShowSettingsCommand { get; }
+
         public MainViewModel()
         {
             StartQuestionnaireCommand = new RelayCommand(StartQuestionnaire);
@@ -15,20 +25,35 @@ namespace ThreatModelingApp.ViewModels
             UpdateDatabaseCommand = new RelayCommand(UpdateDatabase);
             ShowSettingsCommand = new RelayCommand(ShowSettings);
 
-            CurrentViewModel = new QuestionnaireViewModel(); // по умолчанию
+            StartQuestionnaire(); // начнем с опроса
         }
 
-        public RelayCommand StartQuestionnaireCommand { get; }
-        public RelayCommand ShowThreatsCommand { get; }
-        public RelayCommand UpdateDatabaseCommand { get; }
-        public RelayCommand ShowSettingsCommand { get; }
+        public void NavigateTo(ObservableObject viewModel)
+        {
+            CurrentViewModel = viewModel;
 
-        private void StartQuestionnaire() => CurrentViewModel = new QuestionnaireViewModel();
+            if (viewModel is ThreatsListViewModel)
+                IsSurveyComplete = true;
+        }
 
-        private void ShowThreats() => CurrentViewModel = new ThreatsListViewModel();
+        private void StartQuestionnaire()
+        {
+            CurrentViewModel = new QuestionnaireViewModel(NavigateTo);
+        }
 
-        private void UpdateDatabase() => CurrentViewModel = new UpdateViewModel();
+        private void ShowThreats()
+        {
+            CurrentViewModel = new ThreatsListViewModel();
+        }
 
-        private void ShowSettings() => CurrentViewModel = new SettingsViewModel();
+        private void UpdateDatabase()
+        {
+            CurrentViewModel = new UpdateViewModel();
+        }
+
+        private void ShowSettings()
+        {
+            CurrentViewModel = new SettingsViewModel();
+        }
     }
 }

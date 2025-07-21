@@ -26,10 +26,9 @@ namespace ThreatModelingApp.ViewModels
                         relevantThreats.Add($"⚠ Угроза по: {answer.Question}");
                 }
 
-                if (relevantThreats.Count == 0)
-                    ThreatSummary = "✅ Угроз не выявлено.";
-                else
-                    ThreatSummary = string.Join("\n", relevantThreats);
+                ThreatSummary = relevantThreats.Count == 0
+                    ? "✅ Угроз не выявлено."
+                    : string.Join("\n", relevantThreats);
             }
             else
             {
