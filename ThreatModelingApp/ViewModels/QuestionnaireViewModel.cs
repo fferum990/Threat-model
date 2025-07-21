@@ -15,7 +15,7 @@ namespace ThreatModelingApp.ViewModels
 
         private readonly List<string> _questions = new()
         {
-            "Это первый вопрос?",
+            "Это первый вопрос???",
             "Используется ли двухфакторная аутентификация?",
             "Проводится ли регулярное обновление системы?"
         };
