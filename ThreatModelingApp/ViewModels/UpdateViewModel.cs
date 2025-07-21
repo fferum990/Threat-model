@@ -8,9 +8,9 @@ using System.Net.Http;
 using System.Text;
 using System.Threading;
 using System.Threading.Tasks;
-using ThreatModelingApp.Core.Models;  // <-- здесь модель Threat
+using ThreatModelingApp2.Models;  // <-- здесь модель Threat
 
-namespace ThreatModelingApp.ViewModels
+namespace ThreatModelingApp2.ViewModels
 {
     public partial class UpdateViewModel : ObservableObject
     {
@@ -55,7 +55,7 @@ namespace ThreatModelingApp.ViewModels
                     var row = table.Rows[i];
                     var threat = new Threat
                     {
-                        ID = int.TryParse(row[0]?.ToString(), out int id) ? id : 0,
+                        ID = row[0]?.ToString() ?? "",
                         Name = row[1]?.ToString() ?? "",
                         Description = row[2]?.ToString() ?? ""
                     };

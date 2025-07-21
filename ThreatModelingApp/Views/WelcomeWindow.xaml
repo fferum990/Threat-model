@@ -1,0 +1,36 @@
+<Window x:Class="ThreatModelingApp2.Views.WelcomeWindow"
+        xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation"
+        xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
+        Title="Добро пожаловать"
+        Height="350"
+        Width="500"
+        ResizeMode="NoResize"
+        WindowStartupLocation="CenterScreen">
+
+	<Grid Background="#f0f0f0">
+		<StackPanel VerticalAlignment="Center" HorizontalAlignment="Center">
+			<TextBlock Text="ThreatModelingApp"
+                       FontSize="24"
+                       FontWeight="Bold"
+                       HorizontalAlignment="Center"
+                       Margin="0 0 0 10" />
+
+			<TextBlock Text="Добро пожаловать в систему оценки угроз безопасности"
+                       FontSize="14"
+                       TextAlignment="Center"
+                       TextWrapping="Wrap"
+                       Margin="0 0 0 20"/>
+
+			<TextBlock Text="Имя пользователя:" />
+			<TextBox x:Name="UsernameBox" Width="200" Margin="0 5" />
+
+			<TextBlock Text="Пароль:" />
+			<PasswordBox x:Name="PasswordBox" Width="200" Margin="0 5" />
+
+			<Button Content="Войти"
+                    Width="100"
+                    Margin="0 10"
+                    Click="Login_Click"/>
+		</StackPanel>
+	</Grid>
+</Window>

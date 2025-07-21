@@ -2,12 +2,13 @@
 using System.Data;
 using System.Windows;
 
-namespace ThreatModelingApp;
-
-/// <summary>
-/// Interaction logic for App.xaml
-/// </summary>
-public partial class App : Application
+namespace ThreatModelingApp_2
 {
-}
+    /// <summary>
+    /// Interaction logic for App.xaml
+    /// </summary>
+    public partial class App : Application
+    {
+    }
 
+}

@@ -1,9 +1,9 @@
-﻿<Application x:Class="ThreatModelingApp.App"
+﻿<Application x:Class="ThreatModelingApp2.App"
              xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation"
              xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
-             xmlns:local="clr-namespace:ThreatModelingApp"
-             StartupUri="MainWindow.xaml">
+             StartupUri="Views/WelcomeWindow.xaml">
+
     <Application.Resources>
-         
+
     </Application.Resources>
 </Application>

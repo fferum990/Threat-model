@@ -1,6 +1,6 @@
 ﻿using System.Windows.Controls;
 
-namespace ThreatModelingApp.Views
+namespace ThreatModelingApp2.Views
 {
     public partial class UpdateView : UserControl
     {

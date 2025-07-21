@@ -1,27 +1,40 @@
 ﻿using CommunityToolkit.Mvvm.ComponentModel;
 using System.Collections.Generic;
+using System.IO;
+using System.Text.Json;
+using ThreatModelingApp2.Models;
 
-namespace ThreatModelingApp.ViewModels
+namespace ThreatModelingApp2.ViewModels
 {
-    public class ThreatsListViewModel : ObservableObject
+    public partial class ThreatsListViewModel : ObservableObject
     {
-        public List<string> RelevantThreats { get; }
+        [ObservableProperty]
+        private string threatSummary;
 
-        public ThreatsListViewModel(List<(string Question, string Answer)> answers)
+        public ThreatsListViewModel()
         {
-            // Простая логика: если где-то "Нет", добавим угрозу
-            RelevantThreats = new();
-
-            foreach (var (question, answer) in answers)
+            if (File.Exists("result.json"))
             {
-                if (answer == "Нет")
-                {
-                    RelevantThreats.Add($"⚠ Угроза по: {question}");
-                }
-            }
+                var json = File.ReadAllText("result.json");
+                var result = JsonSerializer.Deserialize<ThreatAnalysisResult>(json);
 
-            if (RelevantThreats.Count == 0)
-                RelevantThreats.Add("✅ Угроз не выявлено.");
+                var relevantThreats = new List<string>();
+
+                foreach (var answer in result.Answers)
+                {
+                    if (answer.Answer == "Нет")
+                        relevantThreats.Add($"⚠ Угроза по: {answer.Question}");
+                }
+
+                if (relevantThreats.Count == 0)
+                    ThreatSummary = "✅ Угроз не выявлено.";
+                else
+                    ThreatSummary = string.Join("\n", relevantThreats);
+            }
+            else
+            {
+                ThreatSummary = "Результаты не найдены.";
+            }
         }
     }
 }

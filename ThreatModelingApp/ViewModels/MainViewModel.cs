@@ -1,55 +1,34 @@
-﻿using System.Collections.Generic;
-using System.Windows.Input;
-//using CommunityToolkit.Mvvm.ComponentModel;
-//using CommunityToolkit.Mvvm.Input;
+﻿using CommunityToolkit.Mvvm.ComponentModel;
+using CommunityToolkit.Mvvm.Input;
 
-namespace ThreatModelingApp.ViewModels
+namespace ThreatModelingApp2.ViewModels
 {
-    /*public class MainViewModel : ObservableObject
+    public partial class MainViewModel : ObservableObject
     {
-        private ObservableObject _currentViewModel;
-        public ObservableObject CurrentViewModel
-        {
-            get => _currentViewModel;
-            set => SetProperty(ref _currentViewModel, value);
-        }
-
-        public ICommand StartQuestionnaireCommand { get; }
-        public ICommand ShowThreatsCommand { get; }
-        public ICommand UpdateDatabaseCommand { get; }
-        public ICommand ShowSettingsCommand { get; }
+        [ObservableProperty]
+        private object currentViewModel;
 
         public MainViewModel()
         {
-            StartQuestionnaireCommand = new RelayCommand(() =>
-            {
-                CurrentViewModel = new QuestionnaireViewModel(SetCurrentView);
-            });
+            StartQuestionnaireCommand = new RelayCommand(StartQuestionnaire);
+            ShowThreatsCommand = new RelayCommand(ShowThreats);
+            UpdateDatabaseCommand = new RelayCommand(UpdateDatabase);
+            ShowSettingsCommand = new RelayCommand(ShowSettings);
 
-            ShowThreatsCommand = new RelayCommand(() =>
-            {
-                // Передаём пустой список, если не анализировали ещё
-                CurrentViewModel = new ThreatsListViewModel(new List<(string Question, string Answer)>());
-            });
-
-            UpdateDatabaseCommand = new RelayCommand(() =>
-            {
-                CurrentViewModel = new UpdateViewModel();
-            });
-
-            ShowSettingsCommand = new RelayCommand(() =>
-            {
-                CurrentViewModel = new SettingsViewModel();
-            });
-
-            // Начальный экран
-            CurrentViewModel = new QuestionnaireViewModel(SetCurrentView);
+            CurrentViewModel = new QuestionnaireViewModel(); // по умолчанию
         }
 
-        private void SetCurrentView(ObservableObject vm)
-        {
-            CurrentViewModel = vm;
-        }
+        public RelayCommand StartQuestionnaireCommand { get; }
+        public RelayCommand ShowThreatsCommand { get; }
+        public RelayCommand UpdateDatabaseCommand { get; }
+        public RelayCommand ShowSettingsCommand { get; }
+
+        private void StartQuestionnaire() => CurrentViewModel = new QuestionnaireViewModel();
+
+        private void ShowThreats() => CurrentViewModel = new ThreatsListViewModel();
+
+        private void UpdateDatabase() => CurrentViewModel = new UpdateViewModel();
+
+        private void ShowSettings() => CurrentViewModel = new SettingsViewModel();
     }
-    */
 }
