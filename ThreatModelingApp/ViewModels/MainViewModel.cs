@@ -1,11 +1,11 @@
 ﻿using System.Collections.Generic;
 using System.Windows.Input;
-using CommunityToolkit.Mvvm.ComponentModel;
-using CommunityToolkit.Mvvm.Input;
+//using CommunityToolkit.Mvvm.ComponentModel;
+//using CommunityToolkit.Mvvm.Input;
 
 namespace ThreatModelingApp.ViewModels
 {
-    public class MainViewModel : ObservableObject
+    /*public class MainViewModel : ObservableObject
     {
         private ObservableObject _currentViewModel;
         public ObservableObject CurrentViewModel
@@ -51,4 +51,5 @@ namespace ThreatModelingApp.ViewModels
             CurrentViewModel = vm;
         }
     }
+    */
 }

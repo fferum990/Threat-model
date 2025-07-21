@@ -3,11 +3,12 @@ using System.Collections.Generic;
 using System.IO;
 using System.Linq;
 using System.Threading.Tasks;
-using Newtonsoft.Json;
+//using Newtonsoft.Json;
 using ThreatModelingTool.Core.Models;
 
 namespace ThreatModelingTool.Core.Services
 {
+    /*
     public class UpdateService
     {
         private readonly string _localDataPath = Path.Combine(AppDomain.CurrentDomain.BaseDirectory, "Data");
@@ -90,4 +91,5 @@ namespace ThreatModelingTool.Core.Services
             return JsonConvert.DeserializeObject<T>(json);
         }
     }
+    */
 }

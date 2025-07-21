@@ -5,7 +5,7 @@ using ThreatModelingTool.Core.Models;
 
 namespace ThreatModelingTool.Core.Services
 {
-    public class QuestionnaireService
+    /*public class QuestionnaireService
     {
         private readonly IQuestionRepository _questionRepository;
         private List<Answer> _currentAnswers = new();
@@ -76,4 +76,5 @@ namespace ThreatModelingTool.Core.Services
             return _currentAnswers;
         }
     }
+     */
 }

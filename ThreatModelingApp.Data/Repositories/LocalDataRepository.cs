@@ -3,11 +3,12 @@ using System.Collections.Generic;
 using System.IO;
 using System.Linq;
 using System.Threading.Tasks;
-using Newtonsoft.Json;
-using ThreatModelingApp.Core.Models;
+//using Newtonsoft.Json;
+//using ThreatModelingApp.Core.Models;
 
 namespace ThreatModelingApp.Data.Repositories
 {
+    /*
     public class LocalDataRepository : IDataRepository
     {
         private readonly string _appDataPath;
@@ -147,7 +148,6 @@ namespace ThreatModelingApp.Data.Repositories
 
         #endregion
     }
-
     public interface IDataRepository
     {
         // Threats
@@ -167,4 +167,5 @@ namespace ThreatModelingApp.Data.Repositories
         Task<IEnumerable<DocumentTemplate>> GetTemplatesAsync();
         Task SaveTemplatesAsync(IEnumerable<DocumentTemplate> templates);
     }
+    */
 }

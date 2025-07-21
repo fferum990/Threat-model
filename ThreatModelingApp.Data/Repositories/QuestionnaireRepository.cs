@@ -2,15 +2,16 @@ using System;
 using System.Collections.Generic;
 using System.Linq;
 using System.Threading.Tasks;
-using ThreatModelingApp.Core.Models;
-using ThreatModelingApp.Core.Enums;
+//using ThreatModelingApp.Core.Models;
+//using ThreatModelingApp.Core.Enums;
 using ThreatModelingApp.Data.DbContext;
-using Microsoft.EntityFrameworkCore;
-using Newtonsoft.Json;
+//using Microsoft.EntityFrameworkCore;
+//using Newtonsoft.Json;
 using System.IO;
 
 namespace ThreatModelingApp.Data.Repositories
 {
+    /*
     public class QuestionnaireRepository : IQuestionnaireRepository
     {
         private readonly AppDbContext _dbContext;
@@ -217,4 +218,5 @@ namespace ThreatModelingApp.Data.Repositories
         Task<Dictionary<int, Answer>> LoadAnswersAsync();
         Task UpdateQuestionsFromServerAsync();
     }
+    */
 }

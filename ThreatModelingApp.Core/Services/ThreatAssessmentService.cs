@@ -5,6 +5,7 @@ using ThreatModelingTool.Core.Models;
 
 namespace ThreatModelingTool.Core.Services
 {
+    /*
     public class ThreatAssessmentService
     {
         private readonly IThreatRepository _threatRepository;
@@ -76,4 +77,5 @@ namespace ThreatModelingTool.Core.Services
             }
         }
     }
+    */
 }

@@ -1,9 +1,10 @@
 using System.Collections.Generic;
-using ThreatModelingApp.Core.Enums;
-using ThreatModelingApp.Core.Models;
+//using ThreatModelingApp.Core.Enums;
+//using ThreatModelingApp.Core.Models;
 
 namespace ThreatModelingApp.Data.DbContext
 {
+    /*
     public static class SeedData
     {
         public static List<Threat> GetThreats()
@@ -73,4 +74,5 @@ namespace ThreatModelingApp.Data.DbContext
             };
         }
     }
+    */
 }

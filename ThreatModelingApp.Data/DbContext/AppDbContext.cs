@@ -1,9 +1,10 @@
-using Microsoft.EntityFrameworkCore;
-using ThreatModelingApp.Core.Models;
-using ThreatModelingApp.Core.Enums;
+//using Microsoft.EntityFrameworkCore;
+//using ThreatModelingApp.Core.Models;
+//using ThreatModelingApp.Core.Enums;
 
 namespace ThreatModelingApp.Data.DbContext
 {
+    /*
     public class AppDbContext : DbContext
     {
         public AppDbContext(DbContextOptions<AppDbContext> options) : base(options)
@@ -106,4 +107,5 @@ namespace ThreatModelingApp.Data.DbContext
             modelBuilder.Entity<DocumentTemplate>().HasData(SeedData.GetTemplates());
         }
     }
+    */
 }

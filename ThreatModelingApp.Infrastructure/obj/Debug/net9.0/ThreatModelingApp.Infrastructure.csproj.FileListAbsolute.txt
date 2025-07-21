@@ -1,0 +1,11 @@
+C:\Users\filippovykhma\Documents\repos\Threat-model\ThreatModelingApp.Infrastructure\bin\Debug\net9.0\ThreatModelingApp.Infrastructure.deps.json
+C:\Users\filippovykhma\Documents\repos\Threat-model\ThreatModelingApp.Infrastructure\bin\Debug\net9.0\ThreatModelingApp.Infrastructure.dll
+C:\Users\filippovykhma\Documents\repos\Threat-model\ThreatModelingApp.Infrastructure\bin\Debug\net9.0\ThreatModelingApp.Infrastructure.pdb
+C:\Users\filippovykhma\Documents\repos\Threat-model\ThreatModelingApp.Infrastructure\obj\Debug\net9.0\ThreatModelingApp.Infrastructure.GeneratedMSBuildEditorConfig.editorconfig
+C:\Users\filippovykhma\Documents\repos\Threat-model\ThreatModelingApp.Infrastructure\obj\Debug\net9.0\ThreatModelingApp.Infrastructure.AssemblyInfoInputs.cache
+C:\Users\filippovykhma\Documents\repos\Threat-model\ThreatModelingApp.Infrastructure\obj\Debug\net9.0\ThreatModelingApp.Infrastructure.AssemblyInfo.cs
+C:\Users\filippovykhma\Documents\repos\Threat-model\ThreatModelingApp.Infrastructure\obj\Debug\net9.0\ThreatModelingApp.Infrastructure.csproj.CoreCompileInputs.cache
+C:\Users\filippovykhma\Documents\repos\Threat-model\ThreatModelingApp.Infrastructure\obj\Debug\net9.0\ThreatModelingApp.Infrastructure.dll
+C:\Users\filippovykhma\Documents\repos\Threat-model\ThreatModelingApp.Infrastructure\obj\Debug\net9.0\refint\ThreatModelingApp.Infrastructure.dll
+C:\Users\filippovykhma\Documents\repos\Threat-model\ThreatModelingApp.Infrastructure\obj\Debug\net9.0\ThreatModelingApp.Infrastructure.pdb
+C:\Users\filippovykhma\Documents\repos\Threat-model\ThreatModelingApp.Infrastructure\obj\Debug\net9.0\ref\ThreatModelingApp.Infrastructure.dll

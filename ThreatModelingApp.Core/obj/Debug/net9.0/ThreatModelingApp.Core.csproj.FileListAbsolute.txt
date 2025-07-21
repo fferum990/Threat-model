@@ -1,0 +1,4 @@
+C:\Users\filippovykhma\Documents\repos\Threat-model\ThreatModelingApp.Core\obj\Debug\net9.0\ThreatModelingApp.Core.GeneratedMSBuildEditorConfig.editorconfig
+C:\Users\filippovykhma\Documents\repos\Threat-model\ThreatModelingApp.Core\obj\Debug\net9.0\ThreatModelingApp.Core.AssemblyInfoInputs.cache
+C:\Users\filippovykhma\Documents\repos\Threat-model\ThreatModelingApp.Core\obj\Debug\net9.0\ThreatModelingApp.Core.AssemblyInfo.cs
+C:\Users\filippovykhma\Documents\repos\Threat-model\ThreatModelingApp.Core\obj\Debug\net9.0\ThreatModelingApp.Core.csproj.CoreCompileInputs.cache

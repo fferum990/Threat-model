@@ -1,8 +1,8 @@
 using System;
 using System.Collections.Generic;
 using System.IO;
-using DocumentFormat.OpenXml.Packaging;
-using DocumentFormat.OpenXml.Wordprocessing;
+//using DocumentFormat.OpenXml.Packaging;
+//using DocumentFormat.OpenXml.Wordprocessing;
 using ThreatModelingTool.Core.Models;
 
 namespace ThreatModelingTool.Core.Services
@@ -12,7 +12,7 @@ namespace ThreatModelingTool.Core.Services
         /// <summary>
         /// Генерация документа на основе шаблона
         /// </summary>
-        public void GenerateDocument(List<Threat> threats, string templatePath, string outputPath)
+        /*public void GenerateDocument(List<Threat> threats, string templatePath, string outputPath)
         {
             if (!File.Exists(templatePath))
                 throw new FileNotFoundException("Template file not found", templatePath);
@@ -36,7 +36,7 @@ namespace ThreatModelingTool.Core.Services
             // Сохраняем изменения
             wordDocument.Save();
         }
-
+        
         private void ReplacePlaceholders(Body body, List<Threat> threats)
         {
             var placeholders = new Dictionary<string, string>
@@ -127,6 +127,6 @@ namespace ThreatModelingTool.Core.Services
             paragraph.AppendChild(run);
             cell.AppendChild(paragraph);
             return cell;
-        }
+        }*/
     }
 }
