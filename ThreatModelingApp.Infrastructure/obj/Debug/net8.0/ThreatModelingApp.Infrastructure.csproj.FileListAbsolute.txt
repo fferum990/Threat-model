@@ -22,3 +22,15 @@ C:\Users\Admin\source\repos\Threat-model\ThreatModelingApp.Infrastructure\obj\De
 C:\Users\Admin\source\repos\Threat-model\ThreatModelingApp.Infrastructure\obj\Debug\net8.0\ThreatModelingApp.Infrastructure.pdb
 C:\Users\Admin\source\repos\Threat-model\ThreatModelingApp.Infrastructure\obj\Debug\net8.0\ref\ThreatModelingApp.Infrastructure.dll
 C:\Users\filippovykhma\Documents\repos\Threat-model\ThreatModelingApp.Infrastructure\obj\Debug\net8.0\ThreatModelingApp.Infrastructure.sourcelink.json
+C:\Users\Max\Downloads\Project\Threat-model\ThreatModelingApp.Infrastructure\bin\Debug\net8.0\ThreatModelingApp.Infrastructure.deps.json
+C:\Users\Max\Downloads\Project\Threat-model\ThreatModelingApp.Infrastructure\bin\Debug\net8.0\ThreatModelingApp.Infrastructure.dll
+C:\Users\Max\Downloads\Project\Threat-model\ThreatModelingApp.Infrastructure\bin\Debug\net8.0\ThreatModelingApp.Infrastructure.pdb
+C:\Users\Max\Downloads\Project\Threat-model\ThreatModelingApp.Infrastructure\obj\Debug\net8.0\ThreatModelingApp.Infrastructure.GeneratedMSBuildEditorConfig.editorconfig
+C:\Users\Max\Downloads\Project\Threat-model\ThreatModelingApp.Infrastructure\obj\Debug\net8.0\ThreatModelingApp.Infrastructure.AssemblyInfoInputs.cache
+C:\Users\Max\Downloads\Project\Threat-model\ThreatModelingApp.Infrastructure\obj\Debug\net8.0\ThreatModelingApp.Infrastructure.AssemblyInfo.cs
+C:\Users\Max\Downloads\Project\Threat-model\ThreatModelingApp.Infrastructure\obj\Debug\net8.0\ThreatModelingApp.Infrastructure.csproj.CoreCompileInputs.cache
+C:\Users\Max\Downloads\Project\Threat-model\ThreatModelingApp.Infrastructure\obj\Debug\net8.0\ThreatModelingApp.Infrastructure.sourcelink.json
+C:\Users\Max\Downloads\Project\Threat-model\ThreatModelingApp.Infrastructure\obj\Debug\net8.0\ThreatModelingApp.Infrastructure.dll
+C:\Users\Max\Downloads\Project\Threat-model\ThreatModelingApp.Infrastructure\obj\Debug\net8.0\refint\ThreatModelingApp.Infrastructure.dll
+C:\Users\Max\Downloads\Project\Threat-model\ThreatModelingApp.Infrastructure\obj\Debug\net8.0\ThreatModelingApp.Infrastructure.pdb
+C:\Users\Max\Downloads\Project\Threat-model\ThreatModelingApp.Infrastructure\obj\Debug\net8.0\ref\ThreatModelingApp.Infrastructure.dll

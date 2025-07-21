@@ -22,3 +22,15 @@ C:\Users\Admin\source\repos\Threat-model\ThreatModelingApp.Data\obj\Debug\net8.0
 C:\Users\Admin\source\repos\Threat-model\ThreatModelingApp.Data\obj\Debug\net8.0\ThreatModelingApp.Data.pdb
 C:\Users\Admin\source\repos\Threat-model\ThreatModelingApp.Data\obj\Debug\net8.0\ref\ThreatModelingApp.Data.dll
 C:\Users\filippovykhma\Documents\repos\Threat-model\ThreatModelingApp.Data\obj\Debug\net8.0\ThreatModelingApp.Data.sourcelink.json
+C:\Users\Max\Downloads\Project\Threat-model\ThreatModelingApp.Data\bin\Debug\net8.0\ThreatModelingApp.Data.deps.json
+C:\Users\Max\Downloads\Project\Threat-model\ThreatModelingApp.Data\bin\Debug\net8.0\ThreatModelingApp.Data.dll
+C:\Users\Max\Downloads\Project\Threat-model\ThreatModelingApp.Data\bin\Debug\net8.0\ThreatModelingApp.Data.pdb
+C:\Users\Max\Downloads\Project\Threat-model\ThreatModelingApp.Data\obj\Debug\net8.0\ThreatModelingApp.Data.GeneratedMSBuildEditorConfig.editorconfig
+C:\Users\Max\Downloads\Project\Threat-model\ThreatModelingApp.Data\obj\Debug\net8.0\ThreatModelingApp.Data.AssemblyInfoInputs.cache
+C:\Users\Max\Downloads\Project\Threat-model\ThreatModelingApp.Data\obj\Debug\net8.0\ThreatModelingApp.Data.AssemblyInfo.cs
+C:\Users\Max\Downloads\Project\Threat-model\ThreatModelingApp.Data\obj\Debug\net8.0\ThreatModelingApp.Data.csproj.CoreCompileInputs.cache
+C:\Users\Max\Downloads\Project\Threat-model\ThreatModelingApp.Data\obj\Debug\net8.0\ThreatModelingApp.Data.sourcelink.json
+C:\Users\Max\Downloads\Project\Threat-model\ThreatModelingApp.Data\obj\Debug\net8.0\ThreatModelingApp.Data.dll
+C:\Users\Max\Downloads\Project\Threat-model\ThreatModelingApp.Data\obj\Debug\net8.0\refint\ThreatModelingApp.Data.dll
+C:\Users\Max\Downloads\Project\Threat-model\ThreatModelingApp.Data\obj\Debug\net8.0\ThreatModelingApp.Data.pdb
+C:\Users\Max\Downloads\Project\Threat-model\ThreatModelingApp.Data\obj\Debug\net8.0\ref\ThreatModelingApp.Data.dll
