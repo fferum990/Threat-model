@@ -21,3 +21,4 @@ C:\Users\Admin\source\repos\Threat-model\ThreatModelingApp.Infrastructure\obj\De
 C:\Users\Admin\source\repos\Threat-model\ThreatModelingApp.Infrastructure\obj\Debug\net8.0\refint\ThreatModelingApp.Infrastructure.dll
 C:\Users\Admin\source\repos\Threat-model\ThreatModelingApp.Infrastructure\obj\Debug\net8.0\ThreatModelingApp.Infrastructure.pdb
 C:\Users\Admin\source\repos\Threat-model\ThreatModelingApp.Infrastructure\obj\Debug\net8.0\ref\ThreatModelingApp.Infrastructure.dll
+C:\Users\filippovykhma\Documents\repos\Threat-model\ThreatModelingApp.Infrastructure\obj\Debug\net8.0\ThreatModelingApp.Infrastructure.sourcelink.json

@@ -1,7 +1,7 @@
 ﻿using System.Windows;
 using System.Windows.Controls;
 
-namespace ThreatModelingApp2.Views
+namespace ThreatModelingApp.Views
 {
     public partial class WelcomeWindow : Window
     {

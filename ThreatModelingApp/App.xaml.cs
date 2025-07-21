@@ -2,7 +2,7 @@
 using System.Data;
 using System.Windows;
 
-namespace ThreatModelingApp_2
+namespace ThreatModelingApp
 {
     /// <summary>
     /// Interaction logic for App.xaml

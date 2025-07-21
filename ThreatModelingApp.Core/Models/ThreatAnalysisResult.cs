@@ -1,7 +1,7 @@
 ﻿using System;
 using System.Collections.Generic;
 
-namespace ThreatModelingApp2.Models
+namespace ThreatModelingApp.Core.Models
 {
     public class ThreatAnalysisResult
     {

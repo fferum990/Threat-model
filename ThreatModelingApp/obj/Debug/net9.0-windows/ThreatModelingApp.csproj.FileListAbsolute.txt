@@ -59,3 +59,6 @@ C:\Users\Admin\source\repos\Threat-model\ThreatModelingApp\obj\Debug\net9.0-wind
 C:\Users\Admin\source\repos\Threat-model\ThreatModelingApp\obj\Debug\net9.0-windows\ThreatModelingApp.dll
 C:\Users\Admin\source\repos\Threat-model\ThreatModelingApp\obj\Debug\net9.0-windows\refint\ThreatModelingApp.dll
 C:\Users\Admin\source\repos\Threat-model\ThreatModelingApp\obj\Debug\net9.0-windows\ThreatModelingApp.pdb
+C:\Users\filippovykhma\Documents\repos\Threat-model\ThreatModelingApp\obj\Debug\net9.0-windows\Views\WelcomeWindow.baml
+C:\Users\filippovykhma\Documents\repos\Threat-model\ThreatModelingApp\obj\Debug\net9.0-windows\Views\WelcomeWindow.g.cs
+C:\Users\filippovykhma\Documents\repos\Threat-model\ThreatModelingApp\obj\Debug\net9.0-windows\ThreatModelingApp.sourcelink.json

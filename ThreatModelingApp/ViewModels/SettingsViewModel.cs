@@ -1,6 +1,6 @@
 ﻿using CommunityToolkit.Mvvm.ComponentModel;
 
-namespace ThreatModelingApp2.ViewModels
+namespace ThreatModelingApp.ViewModels
 {
     public class SettingsViewModel : ObservableObject
     {

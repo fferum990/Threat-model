@@ -1,4 +1,4 @@
-﻿<Application x:Class="ThreatModelingApp2.App"
+﻿<Application x:Class="ThreatModelingApp.App"
              xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation"
              xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
              StartupUri="Views/WelcomeWindow.xaml">

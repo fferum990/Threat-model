@@ -6,7 +6,7 @@ using System.IO;
 using System.Text.Json;
 using ThreatModelingApp.Core.Models;
 
-namespace ThreatModelingApp2.ViewModels
+namespace ThreatModelingApp.ViewModels
 {
     public partial class QuestionnaireViewModel : ObservableObject
     {

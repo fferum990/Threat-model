@@ -1,7 +1,7 @@
 ﻿using CommunityToolkit.Mvvm.ComponentModel;
 using CommunityToolkit.Mvvm.Input;
 
-namespace ThreatModelingApp2.ViewModels
+namespace ThreatModelingApp.ViewModels
 {
     public partial class MainViewModel : ObservableObject
     {
