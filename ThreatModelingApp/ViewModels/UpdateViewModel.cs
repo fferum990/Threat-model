@@ -6,9 +6,9 @@ using System.Collections.ObjectModel;
 using System.IO;
 using System.Net.Http;
 using System.Text;
-using System.Threading;
 using System.Threading.Tasks;
-using ThreatModelingApp.Core.Models;  // <-- здесь модель Threat
+using System.Windows; // для Dispatcher
+using ThreatModelingApp.Core.Models;
 
 namespace ThreatModelingApp.ViewModels
 {
@@ -18,12 +18,7 @@ namespace ThreatModelingApp.ViewModels
         private ObservableCollection<Threat> threats = new();
 
         [ObservableProperty]
-        private string statusMessage = "";
-
-        public UpdateViewModel()
-        {
-            StatusMessage = "Готов к обновлению базы угроз.";
-        }
+        private string statusMessage = "Готов к обновлению базы угроз";
 
         [RelayCommand]
         public async Task DownloadThreatsAsync()
@@ -48,19 +43,30 @@ namespace ThreatModelingApp.ViewModels
 
                 var table = dataSet.Tables[0];
 
-                Threats.Clear();
-
-                for (int i = 1; i < table.Rows.Count; i++)
+                await Application.Current.Dispatcher.InvokeAsync(() =>
                 {
-                    var row = table.Rows[i];
-                    var threat = new Threat
+                    Threats.Clear();
+
+                    for (int i = 1; i < table.Rows.Count; i++)
                     {
-                        ID = int.TryParse(row[0]?.ToString(), out int id) ? id : 0,
-                        Name = row[1]?.ToString() ?? "",
-                        Description = row[2]?.ToString() ?? ""
-                    };
-                    Threats.Add(threat);
-                }
+                        var row = table.Rows[i];
+                        var idRaw = row[0]?.ToString();
+                        var nameRaw = row[1]?.ToString();
+
+                        if (string.IsNullOrWhiteSpace(nameRaw)) continue;
+                        if (nameRaw.Trim().ToLower() == "наименование") continue;
+                        if (!int.TryParse(idRaw, out int id)) continue;
+                        if (id == 0) continue;
+
+                        var threat = new Threat
+                        {
+                            ID = id,
+                            Name = nameRaw.Trim(),
+                            Description = row[2]?.ToString()?.Trim() ?? ""
+                        };
+                        Threats.Add(threat);
+                    }
+                });
 
                 StatusMessage = $"Загрузка завершена. Всего угроз: {Threats.Count}";
             }
@@ -70,7 +76,7 @@ namespace ThreatModelingApp.ViewModels
             }
             catch (Exception ex)
             {
-                StatusMessage = "Ошибка: " + ex.Message;
+                StatusMessage = "Ошибка: " + ex.Message + "\n" + ex.StackTrace;
             }
         }
     }

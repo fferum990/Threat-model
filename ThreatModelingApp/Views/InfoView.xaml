@@ -1,0 +1,58 @@
+<UserControl x:Class="ThreatModelingApp.Views.InfoView"
+             xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation"
+             xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
+             xmlns:d="http://schemas.microsoft.com/expression/blend/2008"
+             xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006"
+             mc:Ignorable="d"
+             d:DesignHeight="400" d:DesignWidth="600"
+             Background="White"
+             FontFamily="Segoe UI">
+
+	<ScrollViewer Padding="30">
+		<StackPanel>
+
+			<TextBlock Text="Информация о сборе данных"
+                       FontSize="22"
+                       FontWeight="Bold"
+                       Margin="0 0 0 30"
+                       Foreground="#222" />
+
+			<!-- Блок 1 -->
+			<StackPanel Orientation="Horizontal" Margin="0 8 0 2" VerticalAlignment="Center">
+				<TextBlock Text="✔" FontSize="16" Foreground="#3B5998" Margin="0 0 8 0" />
+				<TextBlock Text="Цель:" FontWeight="Bold" FontSize="15" Foreground="#222" />
+			</StackPanel>
+			<TextBlock Text="Оценка уровня защищенности организации для определения возможных актуальных угроз информационной безопасности."
+                       TextWrapping="Wrap" Margin="24 0 0 15"
+                       FontSize="13" Foreground="#444" />
+
+			<!-- Блок 2 -->
+			<StackPanel Orientation="Horizontal" Margin="0 8 0 2" VerticalAlignment="Center">
+				<TextBlock Text="✔" FontSize="16" Foreground="#3B5998" Margin="0 0 8 0" />
+				<TextBlock Text="Какие данные собираются:" FontWeight="Bold" FontSize="15" Foreground="#222" />
+			</StackPanel>
+			<TextBlock Text="Программа может запрашивать информацию об организации, инфраструктуре и мерах защиты. Персональные данные (ФИО, контакты) — только с согласия пользователя. Мы не собираем IP-адреса, домены или другие конфиденциальные сведения без необходимости."
+                       TextWrapping="Wrap" Margin="24 0 0 15"
+                       FontSize="13" Foreground="#444" />
+
+			<!-- Блок 3 -->
+			<StackPanel Orientation="Horizontal" Margin="0 8 0 2" VerticalAlignment="Center">
+				<TextBlock Text="✔" FontSize="16" Foreground="#3B5998" Margin="0 0 8 0" />
+				<TextBlock Text="Передача третьим лицам:" FontWeight="Bold" FontSize="15" Foreground="#222" />
+			</StackPanel>
+			<TextBlock Text="Все предоставленные данные сохраняются исключительно на вашем устройстве. Программа не использует интернет и не передаёт информацию внешним серверам."
+                       TextWrapping="Wrap" Margin="24 0 0 15"
+                       FontSize="13" Foreground="#444" />
+
+			<!-- Блок 4 -->
+			<StackPanel Orientation="Horizontal" Margin="0 8 0 2" VerticalAlignment="Center">
+				<TextBlock Text="✔" FontSize="16" Foreground="#3B5998" Margin="0 0 8 0" />
+				<TextBlock Text="Согласие на обработку:" FontWeight="Bold" FontSize="15" Foreground="#222" />
+			</StackPanel>
+			<TextBlock Text="Если вы вводите персональные данные, вы подтверждаете своё согласие на их обработку в рамках функциональности приложения в соответствии с ФЗ-152 'О персональных данных'."
+                       TextWrapping="Wrap" Margin="24 0 0 15"
+                       FontSize="13" Foreground="#444" />
+
+		</StackPanel>
+	</ScrollViewer>
+</UserControl>

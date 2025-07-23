@@ -3,14 +3,17 @@
         xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
         xmlns:vm="clr-namespace:ThreatModelingApp.ViewModels"
         xmlns:views="clr-namespace:ThreatModelingApp.Views"
-        Title="ThreatModelingApp" Height="500" Width="800"
+        Title="ThreatModelingApp"
+        Height="600"
+        Width="900"
+        FontFamily="Segoe UI"
+        Background="#F9F9FB"
         WindowStartupLocation="CenterScreen">
 
     <Window.DataContext>
         <vm:MainViewModel />
     </Window.DataContext>
 
-    <!-- Шаблоны View для соответствующих ViewModel -->
     <Window.Resources>
         <DataTemplate DataType="{x:Type vm:QuestionnaireViewModel}">
             <views:QuestionnaireView />
@@ -24,18 +27,65 @@
         <DataTemplate DataType="{x:Type vm:SettingsViewModel}">
             <views:SettingsView />
         </DataTemplate>
+        <DataTemplate DataType="{x:Type vm:InfoViewModel}">
+            <views:InfoView />
+        </DataTemplate>
+        <DataTemplate DataType="{x:Type vm:OrganizationInfoViewModel}">
+            <views:OrganizationInfoView />
+        </DataTemplate>
     </Window.Resources>
 
     <DockPanel>
-        <!-- Меню слева -->
-        <!-- Меню слева -->
-        <StackPanel DockPanel.Dock="Left" Width="180" Background="#EEE" Margin="10">
-            <Button Content="Начать анкетирование" Command="{Binding StartQuestionnaireCommand}" Margin="0,5"/>
-            <Button Content="Актуальные угрозы" Command="{Binding ShowThreatsCommand}" IsEnabled="{Binding IsSurveyComplete}" Margin="0,5"/>
-            <Button Content="Обновить базу" Command="{Binding UpdateDatabaseCommand}" Margin="0,5"/>
-            <Button Content="Настройки" Command="{Binding ShowSettingsCommand}" Margin="0,5"/>
-        </StackPanel>
-        <!-- Центральный контент, сюда подставляется активная ViewModel -->
-        <ContentControl Content="{Binding CurrentViewModel}" Margin="10" />
+
+        <!-- Левая панель -->
+        <Border DockPanel.Dock="Left" Width="220" Background="#FFFFFF" BorderBrush="#E0E0E0" BorderThickness="0,0,1,0">
+            <DockPanel LastChildFill="False" Margin="10">
+
+                <!-- Верхняя часть меню -->
+                <StackPanel DockPanel.Dock="Top">
+                    <Button Content="Организация" 
+                            Command="{Binding ShowOrganizationInfoCommand}" 
+                            Style="{StaticResource MenuButtonStyle}" Margin="0,0,0,8" />
+
+                    <Button Content="Начать анкетирование"
+                            Command="{Binding StartQuestionnaireCommand}"
+                            Style="{StaticResource MenuButtonStyle}" Margin="0,0,0,8" />
+
+                    <Button Content="Актуальные угрозы"
+                            Command="{Binding ShowThreatsCommand}"
+                            IsEnabled="{Binding IsSurveyComplete}"
+                            Style="{StaticResource MenuButtonStyle}" Margin="0,0,0,8" />
+
+                    <Button Content="Обновить базу"
+                            Command="{Binding UpdateDatabaseCommand}"
+                            Style="{StaticResource MenuButtonStyle}" Margin="0,0,0,8" />
+                </StackPanel>
+
+                <!-- Нижняя часть меню -->
+                <StackPanel DockPanel.Dock="Bottom" Margin="0,10,0,0">
+                    <Button Command="{Binding ShowSettingsCommand}"
+                            Style="{StaticResource MenuButtonStyle}"
+                            Margin="0,0,0,8">
+                        <StackPanel Orientation="Horizontal" HorizontalAlignment="Center">
+                            <TextBlock Text="⚙" FontWeight="Bold" Margin="0,0,5,0" />
+                            <TextBlock Text="Настройки" />
+                        </StackPanel>
+                    </Button>
+
+                    <Button Command="{Binding ShowInfoCommand}"
+                            Style="{StaticResource MenuButtonStyle}"
+                            Margin="0,0,0,8">
+                        <StackPanel Orientation="Horizontal" HorizontalAlignment="Center">
+                            <TextBlock Text="🛈" FontWeight="Bold" Margin="0,0,5,0" />
+                            <TextBlock Text="Информация" />
+                        </StackPanel>
+                    </Button>
+                </StackPanel>
+
+            </DockPanel>
+        </Border>
+
+        <!-- Центральная часть -->
+        <ContentControl Content="{Binding CurrentViewModel}" Margin="20"/>
     </DockPanel>
 </Window>
