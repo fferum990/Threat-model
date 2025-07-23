@@ -1,1 +1,9 @@
 .vs/
+ThreatModelingApp/bin/
+ThreatModelingApp/obj/
+ThreatModelingApp.Core/bin/
+ThreatModelingApp.Core/obj/
+ThreatModelingApp.Data/bin/
+ThreatModelingApp.Data/obj/
+ThreatModelingApp.Infrastructure/bin/
+ThreatModelingApp.Infrastructure/obj/
